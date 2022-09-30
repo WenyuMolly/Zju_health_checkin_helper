@@ -120,8 +120,8 @@ class DingDingPush(IPushUtil):
             res += "# " + "{}-".format(self.push_title) + title + "\n"
             # 内容
             res += text
-            # at对象
-            res += reduce(lambda x, y: x + "@" + y, at, "")
+            # at对象 (the 3rd parameter is an initializer)
+            res += reduce(lambda x, y: x + "@" + y, "", at)
             return res
 
         return {
