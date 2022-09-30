@@ -16,14 +16,14 @@ CONFIG_INI_PATH = Path(__file__).resolve().parent.with_name("push_config.ini")
 
 REMIND_MSG = """
 [pusher]
-pusher_type = pushplus
+pusher_type = dingding
 
 [serverchan]
 sec_key =
 
 [dingding]
-access_token =
-secret =
+access_token = 703f9f0a435a11037c6af64d877579a12929458d715299adf753034f10ccdd0c
+secret = zhao
 
 [pushplus]
 pushplus_token = 
