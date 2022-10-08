@@ -121,7 +121,7 @@ class DingDingPush(IPushUtil):
             # 内容
             res += text
             # at对象 (the 3rd parameter is an initializer)
-            res += reduce(lambda x, y: x + "@" + y, "", at)
+            res += reduce(lambda x, y: x + "@" + y, at, "")
             return res
 
         return {
